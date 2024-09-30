@@ -1,7 +1,0 @@
-## Reflections on Academic Challenges and Personal Growth
-
-I was still immature when I started my degree. I didn’t take my studies seriously at first. However, I am actually a capable individual, as evidenced by my performance in the last semester before my internship. I never received the Dean’s Award, not even during the first semester, which was the easiest one, including the online semesters (during the MCO quarantine), when many students earned the award due to the assessments being conducted online. But I managed to get the **Dean’s Award during a physical semester (physical examination), in the final year**, which was the hardest semester. I had 6 subjects, 5 of them involved coding projects. **Only a few students received the Dean’s Award at that time, and I was one of them**. This proves that **if I set my mind to something, I can achieve it**. 
-
-It was only when I realized that I needed to complete my degree with at least a GPA above 3.00 that I began to push myself and improve my performance. With good results in the final semesters, my GPA significantly improved.
-
-Additionally, we can see that I performed well in subjects that required a strong foundation in mathematics, such as **Discrete Structure & Application, Algorithm & Complexity, and Artificial Intelligence Technique, even though I didn’t put much effort into them**. With my current bootcamp, I’ve finally proven that I am still a **fast learner**, as seen by my trainers. I’ve also become a **mentor for machine learning** to my friends here.
