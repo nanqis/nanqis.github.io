@@ -27,37 +27,40 @@
         <h2>Highlighted Projects</h2>
 
         <article>
-            <h3>Malaysia Bank Negara Analysis</h3>
-            <p>Details and complex analysis about economic factors in Malaysia</p>
-            <a href="https://github.com/nanqis/DataAnalysis_BankNegara.git" target="_blank" title="View on GitHub">View on GitHub</a> | 
-            <a href="https://drive.google.com/file/d/1fHtvoNwUqOewsjPk1hMX493HBaxbie6J/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
-        </article>
-        <article>
-            <h3>Time-Series Models</h3>
-            <p>Predict the daily trend of blood donation in Malaysia for every state.</p>
-            <a href="https://github.com/nanqis/timeseries_blooddonation.git" target="_blank" title="View on GitHub">View on GitHub</a> | 
-            <a href="https://drive.google.com/file/d/1cFucKyIhgTHzbSwWRbij4vbdbC1uZ8BX/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
-        </article>
-        <article>
-            <h3>Supervised Learning and Unsupervised Learning</h3>
-            <p>Predicting monthly number of donations for every blood type (A, B, AB, O) in every state.</p>
+            <h3>1) Monthly Blood Donation Prediction and Web Deployment</h3>
+            <p>Developed a predictive model to forecast monthly blood donations by state and blood type using an ensemble of regressors (MultipleOutputRegressor, Linear Regression, Decision Tree, Random Forest, Support Vector Regressor, and Gradient Boosting Regressor). Data processing included outlier handling, PCA, and feature engineering. The model was optimized with hyperparameter tuning, and performance was evaluated with RMSE, MAE, and R-squared. Deployed using Flask and Pickle.</p>
             <a href="https://github.com/nanqis/monthly_blooddonation_unit.git" target="_blank" title="View on GitHub">View on GitHub</a> | 
             <a href="https://drive.google.com/file/d/1xgIdBQDYn8EiGwOlKuGRCFzPDvLNym0i/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
         </article>
+
         <article>
-            <h3>Natural Language Processing (NLP)</h3>
-            <p>Analyzing tweets using NLP</p> 
-            <a href="https://raw.githubusercontent.com/nanqis/nanqis.github.io/main/twittersentiment.pdf" target="_blank" title="View on GitHub">*Unable to view on GitHub due to technical issues encountered during the upload. View the pdf containing the Jupyter Notebook screenshots instead</a> |
+            <h3>2) Daily Blood Donation Prediction (Time Series Analysis)</h3>
+            <p>Implemented SARIMAX to predict daily blood donations for four states in Malaysia, incorporating exogenous factors and weekly seasonality. The model was evaluated using AIC, residual analysis (Ljung-Box test, ACF/PACF plots), and forecasted 30-day trends with uncertainty captured via confidence intervals.</p>
+            <a href="https://github.com/nanqis/timeseries_blooddonation.git" target="_blank" title="View on GitHub">View on GitHub</a> | 
+            <a href="https://drive.google.com/file/d/1cFucKyIhgTHzbSwWRbij4vbdbC1uZ8BX/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
+        </article>
+
+        <article>
+            <h3>3) Tweet Dataset Sentiment Analysis and Classification</h3>
+            <p>Performed sentiment analysis on a large tweet dataset using TextBlob for polarity extraction and Logistic Regression for classification. Applied NLP techniques for preprocessing, including tokenization and stopword removal. The model was evaluated using classification reports. Additionally, translated tweets to Malay using GoogleTranslator API.</p>
+            <a href="https://raw.githubusercontent.com/nanqis/nanqis.github.io/main/twittersentiment.pdf" target="_blank" title="View PDF">View PDF</a> |
             <a href="https://drive.google.com/file/d/1GXV27k8YgScjxJhbfQo1nx_Qi_ocAW6C/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
         </article>
+
         <article>
-            <h3>Basic Covolutional Neural Network (CNN) exploration</h3>
-            <p>Image Classification</p>
+            <h3>4) Image Recognition Using CNN (CIFAR-10 Dataset)</h3>
+            <p>Built a CNN model with TensorFlow and Keras to classify images from the CIFAR-10 dataset into 10 categories. The model consisted of convolutional layers for feature extraction and dense layers for classification. Evaluated performance with accuracy metrics and visualized learning over 10 epochs.</p>
             <a href="https://github.com/nanqis/cnn" target="_blank" title="View on GitHub">View on GitHub</a> | 
             <a href="https://drive.google.com/file/d/1s2RTpnRHA4BUOlFGnNvYoBTrXDJF9Hlf/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
         </article>
-    </section>
 
+        <article>
+            <h3>5) Bank Negara Dataset Analysis: Population Age Distribution and Economic Indicators</h3>
+            <p>This project explores the relationship between population age distribution and economic indicators (GCF, GDS) in Malaysia. Utilized hierarchical clustering to uncover patterns, finding that age dependency ratios negatively affect capital formation and savings, urbanization drives capital formation, and interest rates influence both savings and investment behavior.</p>
+            <a href="https://github.com/nanqis/DataAnalysis_BankNegara.git" target="_blank" title="View on GitHub">View on GitHub</a> | 
+            <a href="https://drive.google.com/file/d/1fHtvoNwUqOewsjPk1hMX493HBaxbie6J/view?usp=sharing" target="_blank" title="Download ZIP">Download ZIP</a>
+        </article>
+    </section>
 
     <section>
         <h2>Tools and Frameworks Used</h2>
@@ -74,13 +77,13 @@
             <li>BS4</li>
             <li>TextBlob</li>
         </ul>
-        
+
         <h3>Data Visualization Tools:</h3>
         <ul>
             <li>Matplotlib</li>
             <li>Seaborn</li>
         </ul>
-        
+
         <h3>Programming Languages:</h3>
         <ul>
             <li>Python</li>
@@ -91,7 +94,6 @@
             <li>JavaScript</li>
         </ul>
     </section>
-
 </main>
 
 <footer>
@@ -100,3 +102,5 @@
 
 </body>
 </html>
+
+            
