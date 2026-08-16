@@ -281,11 +281,11 @@ export const sections = [
 ]
 
 export const principleText =
-  'Master what you finish faster yourself, than AI. If AI is still faster even when you know it,use AI; deep understanding is enough. Always pick the faster, better approach.'
+  'Master the skills that make you faster than AI. Use AI when it makes you faster. But always choose the most effective approach. '
 
 export const aboutMe = {
   name: 'Hannan Balqis',
-  role: 'PHP programmer',
+  role: 'Software Engineer',
   home: 'Kuala Kangsar, Perak',
   currently: 'Based in Puchong, Selangor for work',
   loves: [
