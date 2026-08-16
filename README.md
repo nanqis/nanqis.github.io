@@ -1,6 +1,6 @@
 # Hannan Balqis — Portfolio
 
-Interactive PHP-programmer–themed portfolio (React + Vite). Pink / purple / turquoise IDE chrome, edge navigation, section shells ready for content.
+Interactive PHP-programmer–themed portfolio (React + Vite).
 
 ## Develop
 
@@ -9,13 +9,16 @@ npm install
 npm run dev
 ```
 
-## Build
+## Publish to GitHub Pages (no Actions build)
+
+Build and sync into `docs/` (this is what you commit and push):
 
 ```bash
-npm run build
-npm run preview
+npm run build:pages
 ```
 
-## GitHub Pages
+Then commit the updated `docs/` folder and push to `main`.
 
-Push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). In the repo: **Settings → Pages → Source → GitHub Actions**.
+In the repo: **Settings → Pages → Deploy from a branch → `main` / `/docs`**.
+
+`dist/` stays gitignored; only `docs/` is published.
