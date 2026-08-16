@@ -1,0 +1,66 @@
+.ai-panel__lead {
+  margin: 0 0 1.1rem;
+  color: var(--text-muted);
+  max-width: 42rem;
+}
+
+.ai-panel__flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.15rem;
+}
+
+.ai-panel__node {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  font-size: 0.75rem;
+  color: var(--purple-bright);
+}
+
+.ai-panel__node.is-pink {
+  color: var(--pink-soft);
+  border-color: rgba(255, 77, 158, 0.45);
+}
+
+.ai-panel__node.is-turq {
+  color: var(--turquoise-bright);
+  border-color: rgba(46, 196, 182, 0.45);
+}
+
+.ai-panel__arrow {
+  color: var(--text-dim);
+  font-weight: 700;
+}
+
+.ai-panel__list {
+  margin: 0 0 0.85rem;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.ai-panel__list li {
+  margin-bottom: 0.35rem;
+}
+
+.ai-panel__list .tok-comment {
+  color: var(--syntax-comment);
+}
+
+.ai-panel__cert {
+  color: var(--turquoise-bright);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s var(--ease),
+    border-color 0.2s var(--ease);
+}
+
+.ai-panel__cert:hover {
+  color: var(--pink-soft);
+  border-bottom-color: var(--pink-soft);
+}

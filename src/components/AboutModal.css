@@ -1,0 +1,129 @@
+.about-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+}
+
+.about-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(10, 4, 18, 0.72);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+.about-modal__window {
+  position: relative;
+  width: min(580px, 100%);
+  max-height: min(90vh, 640px);
+  border: 1px solid var(--border-hot);
+  border-radius: 12px;
+  background: var(--bg-panel);
+  box-shadow: var(--glow-pink), 0 24px 60px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: modalIn 0.35s var(--ease);
+}
+
+.about-modal__titlebar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--bg-gutter);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-modal__dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.about-modal__dots i {
+  display: block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--pink);
+}
+
+.about-modal__dots i:nth-child(2) {
+  background: #ffd166;
+}
+
+.about-modal__dots i:nth-child(3) {
+  background: var(--turquoise);
+}
+
+.about-modal__titlebar h2 {
+  margin: 0;
+  flex: 1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.about-modal__close {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 0.2rem 0.45rem;
+}
+
+.about-modal__close:hover {
+  color: var(--pink-soft);
+  border-color: var(--pink);
+}
+
+.about-modal__body {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  min-height: 280px;
+  overflow: auto;
+}
+
+.about-modal__gutter {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.35rem;
+  background: var(--bg-gutter);
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  text-align: right;
+  line-height: 1.7;
+  border-right: 1px solid var(--border);
+}
+
+.about-modal__code {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+.tok-comment {
+  color: var(--syntax-comment);
+}
+
+.tok-keyword {
+  color: var(--syntax-keyword);
+}
+
+.tok-var {
+  color: var(--syntax-var);
+}
+
+.tok-string {
+  color: var(--syntax-string);
+}
+
+.tok-fn {
+  color: var(--syntax-fn);
+}

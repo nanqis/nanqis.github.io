@@ -1,0 +1,55 @@
+.soft-deck {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.soft-deck__intro {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 36rem;
+}
+
+.soft-deck__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.soft-deck__chip {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-gutter);
+  color: var(--syntax-var);
+  font-size: 0.75rem;
+  transition:
+    transform 0.2s var(--ease),
+    border-color 0.2s var(--ease),
+    background 0.2s var(--ease),
+    box-shadow 0.2s var(--ease);
+}
+
+.soft-deck__chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--pink-soft);
+}
+
+.soft-deck__chip.is-active {
+  background: rgba(255, 77, 158, 0.18);
+  border-color: var(--pink);
+  color: var(--pink-soft);
+  box-shadow: var(--glow-pink);
+}
+
+.soft-deck__active {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  animation: fadeUp 0.25s var(--ease);
+}
+
+.soft-deck__active .tok-fn {
+  color: var(--syntax-fn);
+  margin-right: 0.35rem;
+}

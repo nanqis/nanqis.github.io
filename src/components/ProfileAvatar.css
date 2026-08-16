@@ -1,0 +1,50 @@
+.profile-avatar {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+.profile-avatar__ring {
+  position: absolute;
+  left: 50%;
+  top: -0.75rem;
+  width: 9rem;
+  height: 9rem;
+  margin-left: -4.5rem;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--bg-deep), var(--bg-deep)) padding-box,
+    linear-gradient(135deg, var(--pink), var(--purple), var(--turquoise)) border-box;
+  box-shadow: var(--glow-pink), var(--glow-turquoise);
+  animation: edgeGlow 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.profile-avatar__face {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  background: linear-gradient(145deg, var(--bg-elevated), var(--bg-panel));
+  transition: transform 0.3s var(--ease);
+}
+
+.profile-avatar:hover .profile-avatar__face {
+  transform: scale(1.04);
+}
+
+.profile-avatar__hint {
+  font-size: 0.7rem;
+  color: var(--syntax-comment);
+}

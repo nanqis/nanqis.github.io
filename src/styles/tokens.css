@@ -1,0 +1,37 @@
+:root {
+  /* Pink / purple / turquoise */
+  --bg-deep: #1a0b2e;
+  --bg-panel: #24153d;
+  --bg-elevated: #2e1a4f;
+  --bg-gutter: #16081f;
+
+  --pink: #ff4d9e;
+  --pink-soft: #ff7eb6;
+  --purple: #9b5de5;
+  --purple-bright: #c77dff;
+  --turquoise: #2ec4b6;
+  --turquoise-bright: #5efce8;
+
+  --text: #f5eef8;
+  --text-muted: #b8a4c9;
+  --text-dim: #7a668f;
+
+  --syntax-string: #ff7eb6;
+  --syntax-keyword: #c77dff;
+  --syntax-fn: #5efce8;
+  --syntax-comment: #6e5a82;
+  --syntax-var: #ff4d9e;
+
+  --border: rgba(158, 93, 229, 0.35);
+  --border-hot: rgba(255, 77, 158, 0.55);
+  --glow-pink: 0 0 24px rgba(255, 77, 158, 0.35);
+  --glow-turquoise: 0 0 20px rgba(46, 196, 182, 0.3);
+
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --principle-h: 3.25rem;
+  --edge-size: 2.75rem;
+  --radius: 10px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

@@ -1,0 +1,85 @@
+.edge-nav {
+  pointer-events: none;
+}
+
+.edge-nav__rail {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  gap: 0.4rem;
+  pointer-events: auto;
+}
+
+.edge-nav__rail--bottom {
+  bottom: 0.35rem;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: row;
+  max-width: calc(100vw - 5.5rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edge-nav__rail--left {
+  left: 0.35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+}
+
+.edge-nav__rail--right {
+  right: 0.35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+}
+
+.edge-nav__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--edge-size);
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(36, 21, 61, 0.92);
+  color: var(--text-muted);
+  transition:
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    background 0.25s var(--ease),
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+
+.edge-nav__btn:hover {
+  color: var(--text);
+  border-color: var(--pink-soft);
+  transform: scale(1.05);
+}
+
+.edge-nav__btn.is-active {
+  color: var(--bg-deep);
+  background: linear-gradient(135deg, var(--turquoise), var(--pink-soft));
+  border-color: transparent;
+  animation: edgeGlow 2.4s ease-in-out infinite;
+}
+
+.edge-nav__label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .edge-nav__btn {
+    min-height: 2.2rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .edge-nav__label {
+    font-size: 0.62rem;
+  }
+}
