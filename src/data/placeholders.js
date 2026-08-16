@@ -281,7 +281,7 @@ export const sections = [
 ]
 
 export const principleText =
-  'Master what you finish faster yourself than AI. If AI is still faster even when you know it — use AI; deep understanding is enough. Always pick the faster, better approach.'
+  'Master what you finish faster yourself, than AI. If AI is still faster even when you know it,use AI; deep understanding is enough. Always pick the faster, better approach.'
 
 export const aboutMe = {
   name: 'Hannan Balqis',
